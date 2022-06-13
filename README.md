@@ -4,14 +4,13 @@ React web dev portfolio
   
 ## Table of Contents:
   
-### [Description](#description)
-### [Technologies](#technologies)
-### [Installation](#installation)
-### [Usage](#usage)
-### [Contribution](#contribution)
-### [license](#license)
-### [Questions](#questions)
-### [Contact](#contact)
+* [Description](#description)
+* [Technologies](#technologies)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contribution](#contribution)
+* [license](#license)
+* [Contact](#contact)
 
 ## Description
 
@@ -39,7 +38,7 @@ Boris Veselov
   
 MIT license
 
-## Questions & Contact Information
+## Contact
 
 borisveselov@yahoo.com
 github.com/boris-veselov
