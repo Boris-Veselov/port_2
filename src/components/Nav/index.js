@@ -1,24 +1,19 @@
 import React from 'react';
 
-const categories = [
-    {
-        name: "Projects",
-        description:
-        "my projects",
-    },
-    { 
-        name: "Resume", 
-        description: "my resume" 
-    },
-];
+function Nav(props) {
+const {
+    categories = [],
+    setCurrentCategory,
+    currentCategory,
+    } = props;
 
-const handleClick = () => {
-    console.log("click handled")
-  }
+const handleClick = (item) => {
+    console.log(item);
+    return item;
+  };
 
-function Nav() {
     return (
-        <header>
+        <header className='flex-row mx-2'>
             <h3>
                 <a href='/'>
                     <span role='img' aria-label=''></span> Boris Veselov
@@ -31,17 +26,27 @@ function Nav() {
                             About me
                         </a>
                     </li>
+                    <li className={"mx-2"}>
+                        <span onClick={() => handleClick('Projects')}>Projects</span>
+                    </li>
+                    <li className={"mx-2"}>
+                        <span onClick={() => handleClick('Resume')}>Resume</span>
+                    </li>
                     {categories.map((category) => (
                         <li
-                            className="mx-1"
-                            key={category.name}>
-                        <span onClick={() => { handleClick(); }}>
-                            {(category.name)}
+                            className={`mx-1 ${currentCategory.name === category.name && 'navActive'
+                            }`}
+                            key={category.name}
+                        >
+                        <span
+                            onClick={() => {
+                            setCurrentCategory(category)
+                            }}>
                         </span>
                         </li>
                     ))}
-                    <li lassName={"mx-2"}>
-                        <span onClick={() => handleClick()}>Contact</span>
+                    <li className={"mx-2"}>
+                        <span onClick={() => handleClick('Contact')}>Contact</span>
                     </li>
                 </ul>
             </nav>
