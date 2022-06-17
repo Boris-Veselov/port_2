@@ -9,8 +9,7 @@ function App() {
   const [categories] = useState ([
     {
         name: "Projects",
-        description:
-        "my projects",
+        description: "my projects",
     },
     { 
         name: "Resume", 
@@ -18,8 +17,7 @@ function App() {
     },
     {
         name: "Contact",
-        description:
-        "Contact",
+        description: "Contact",
     }
 ]);
 
@@ -34,7 +32,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
       </Nav>
       <main>
         <About></About>
-        <Projects></Projects>
+        <Projects currentCategory={currentCategory}></Projects>
       </main>
     </div>
   );
