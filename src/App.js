@@ -1,38 +1,43 @@
 import React, { useState } from 'react';
-import Nav from'./components/Nav';
+import Nav from './components/Nav';
 import About from './components/About';
 import Projects from './components/Projects';
-import './App.css';
+import ContactForm from './components/Contact';
 
 function App() {
-
-  const [categories] = useState ([
+  const [categories] = useState([
     {
-        name: "Projects",
-        description: "my projects",
+      name: 'Portfolio',
+      description: 'Showcase of some of my work',
     },
     { 
-        name: "Resume", 
-        description: "my resume" 
+      name: 'Resume', 
+      description: 'My resume' 
     },
-    {
-        name: "Contact",
-        description: "Contact",
-    }
-]);
+  ]);
 
-const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
+  const [contactSelected, setContactSelected] = useState(false);
 
   return (
     <div>
-      <Nav>
+      <Nav
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
-      </Nav>
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+      ></Nav>
       <main>
-        <About></About>
-        <Projects currentCategory={currentCategory}></Projects>
+        {!contactSelected ? (
+          <>
+            <About></About>
+            <Projects currentCategory={currentCategory}></Projects>
+          </>
+        ) : (
+          <ContactForm></ContactForm>
+        )}
       </main>
     </div>
   );
