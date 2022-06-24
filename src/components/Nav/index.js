@@ -16,9 +16,12 @@ function Nav(props) {
   return (
     <header className="flex-row px-1">
       <h2>
-        <a href="/">
+      {/* <a href="/"><img src={require("../../assets/logo.png")} alt="Email icon"></img>
           <span role="img" aria-label=""></span>Boris Veselov
-        </a>
+        </a> */}
+        
+          <span role="img" aria-label=""></span>Boris Veselov
+        
       </h2>
       <nav>
         <ul className="flex-row">
