@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
-import About from './components/About';
+import Header from './components/Header';
 import Projects from './components/Projects';
 import ContactForm from './components/Contact';
+import Footer from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import background from './assets/pics/Style/back.jpg';
+
+
 
 function App() {
   const [categories] = useState([
@@ -12,7 +17,6 @@ function App() {
     },
     { 
       name: 'Resume', 
-      description: 'My resume' 
     },
   ]);
 
@@ -21,7 +25,8 @@ function App() {
   const [contactSelected, setContactSelected] = useState(false);
 
   return (
-    <div>
+    <div style={{ backgroundImage: `url(${background})` }}>
+      
       <Nav
         categories={categories}
         setCurrentCategory={setCurrentCategory}
@@ -32,13 +37,14 @@ function App() {
       <main>
         {!contactSelected ? (
           <>
-            <About></About>
+            <Header></Header>
             <Projects currentCategory={currentCategory}></Projects>
           </>
         ) : (
           <ContactForm></ContactForm>
         )}
       </main>
+      <Footer/>
     </div>
   );
 }

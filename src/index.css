@@ -16,13 +16,13 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
-  --secondary: #7eb6b6;
+  --primary: #000000;
+  --secondary: #e6cc84;
   --tertiary: #B12704;
-  --light: #fafafa;
-  --dark: #000000;
-  --darker: #111111;
-  --error: rgb(228, 46, 1);
+  --light: #ffffff;
+  --dark: #215a68;
+  --darker: #e2dbdb;
+  --error: rgb(221, 219, 219);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
@@ -64,11 +64,11 @@ h6 {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: .25rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: rem;
 }
 
 h3 {
@@ -283,7 +283,7 @@ button {
 	background: var(--primary);
 	border: 0;
 	border-radius: 5px;
-	color: #fff;
+	color: rgb(214, 213, 149);
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 600;
@@ -303,4 +303,8 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+footer {
+  text-align: center;
 }

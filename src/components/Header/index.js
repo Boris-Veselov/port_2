@@ -6,7 +6,7 @@ function About() {
       <section className='my-5'>
           <h1 id="about">Welcome to my portfolio page!
           <br></br>
-          <img src={coverImage} className="my-2" style={{ width: "50%", }} alt="cover" />
+          <img src={coverImage} className="my-2" style={{ width: "50%" }} alt="cover" />
           <br></br>
           User story: 
           <br></br>

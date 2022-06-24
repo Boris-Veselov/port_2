@@ -17,6 +17,11 @@ console.log(category)
       description: 'A website that suggests random facts or jokes for when you are looking for random funny information online'
     },
     {
+      name: 'Run Buddy',
+      category: 'Portfolio',
+      description: 'A website where you can connect with a trainer to get a proper plan for what you are trying to accomplich: get fit, lose weight or just feel good'
+    },
+    {
     name: 'My most recent resume',
       category: 'Resume',
     },
