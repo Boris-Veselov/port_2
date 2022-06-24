@@ -15,7 +15,7 @@ React web dev portfolio
 
 ## Description
 
-Personal portfolio build with React and Bootstrap which includes various projects, my resume and contact information.
+Personal portfolio build with React and, CSS and Bootstrap which includes various projects, my resume and contact information.
 
 ## Technologies
 
