@@ -29,7 +29,7 @@ Personal portfolio build with React and, CSS and Bootstrap which includes variou
 
 ## Website Link
 
-https://boris-veselov.github.io/web-dev-portfolio/
+https://boris-veselov.github.io/port_2/
 
 ## Installation
 
@@ -37,7 +37,7 @@ To build a single page React portolio app, first create a new React app by runni
 
 ## Usage
 
-To run it locally, open it http://localhost:3000 to view it in your browser by running apm start.
+To run it locally, open it http://localhost:3000 to view it in your browser by running npm start.
 
 ## Contribution
 
